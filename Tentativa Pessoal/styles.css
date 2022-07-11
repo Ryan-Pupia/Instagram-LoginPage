@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 100vh;
+}
+
+.phone-showcase {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+}
+
+.phone-showcase img {
+    height: 50rem;
+}
+
+.utilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+    margin: 0 5%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.group:nth-child(2) {
+    min-height: 5rem;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 6rem;
+}
+
+.continue {
+    background-color: #0095f6;
+    color: white;
+    border-radius: 30px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+a {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.group p {
+    color: rgb(160, 160, 160);
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.download img {
+    height: 3rem;
+    width: 10rem;
+}
+
+/* Smaller Screen */
+@media (max-width: 1024px) {
+    .instagram-wrapper	{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    
+    body {
+        background-color: white;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .phone-showcase {
+        display: none;
+    }
+
+    .utilities {
+        width: 100%;
+    }
+
+    .group {
+        border: none;
+    }
+}
